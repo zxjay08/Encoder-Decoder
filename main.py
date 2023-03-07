@@ -3,6 +3,16 @@
 # 3/8/2023
 # Xin Zhao
 
+def decoder(password):
+    res = ""
+
+    for i in range(len(password)):
+        curr_num = int(password[i])
+        curr_num -= 3
+        str_num = str(curr_num)
+        res = res + str_num
+
+    return res
 
 def encoder(password):
     res = ""
